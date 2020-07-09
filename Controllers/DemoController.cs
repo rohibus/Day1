@@ -10,12 +10,6 @@ namespace assignment.Controllers
     public class DemoController : Controller
     {
         // GET: Demo
-        
-        public ActionResult greet()
-        {
-
-            return View();
-        }
 
 
         public static List<Product> list = new List<Product>()
@@ -48,10 +42,10 @@ namespace assignment.Controllers
             ViewData["2"] = Pname;
             ViewData["3"] = Price;
             ViewData["4"] = Stock;
-            return View("details");
+            return View("greet");
         }
 
-        public ActionResult details()
+        public ActionResult greet()
         {
             //adding project data to list
             
