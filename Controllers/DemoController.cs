@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -44,7 +44,19 @@ namespace assignment.Controllers
             //adding project data to list
             Product p = new Product() { Pid = Pid, Pname = Pname, Price = Price, Stock = Stock };
             list.Add(p);
-            return View("greet");
+            ViewData["1"] = Pid;
+            ViewData["2"] = Pname;
+            ViewData["3"] = Price;
+            ViewData["4"] = Stock;
+            return View("details");
         }
+
+        public ActionResult details()
+        {
+            //adding project data to list
+            
+            return View();
+        }
+
     }
 }
