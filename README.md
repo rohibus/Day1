@@ -1,2 +1,2 @@
-# Socgen
+# day3
 Assignments
